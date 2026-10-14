@@ -1,0 +1,161 @@
+/* ── PAGE ── */
+.profile-page {
+  padding: 2rem 3rem;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: #f9f9f9;
+}
+
+/* ── BACK BUTTON ── */
+.back-btn {
+  background: transparent;
+  border: none;
+  color: #007300;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  transition: opacity 0.2s;
+}
+
+.back-btn:hover {
+  opacity: 0.7;
+}
+
+/* ── PROFILE CARD ── */
+.profile-card {
+  background: #e4fde4;
+  border: 2px solid #c8e6c0;
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ── AVATAR ── */
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #007300;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── NAME ── */
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+/* ── INFO ── */
+.profile-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.profile-info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.profile-label {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.profile-value {
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+/* ── RIDES SECTION ── */
+.profile-rides {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.profile-rides-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #007300;
+  margin-bottom: 1.5rem;
+}
+
+.profile-empty {
+  text-align: center;
+  color: #888;
+  padding: 2rem;
+  font-size: 0.95rem;
+}
+
+/* reuse rides-grid from RidesPage.css */
+.rides-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.ride-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn-delete-ride {
+  background: #cc0000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: opacity 0.2s;
+  align-self: center;
+  padding: 8px 16px;
+}
+
+.btn-delete-ride:hover {
+  opacity: 0.9;
+}
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .rides-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-page {
+    padding: 1.5rem 1rem;
+  }
+
+  .rides-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+}

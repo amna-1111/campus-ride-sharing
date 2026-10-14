@@ -1,0 +1,205 @@
+/* ── PAGE ── */
+.ride-details-page {
+  padding: 2rem 3rem;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: #f9f9f9;
+}
+
+/* ── BACK BUTTON ── */
+.back-btn {
+  background: transparent;
+  border: none;
+  color: #007300;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  transition: opacity 0.2s;
+}
+
+.back-btn:hover {
+  opacity: 0.7;
+}
+
+/* ── CARD ── */
+.ride-details-card {
+  background: #e4fde4;
+  border: 2px solid #c8e6c0;
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ── HEADER ── */
+.details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.details-posted-by {
+  font-size: 1rem;
+  color: #333;
+}
+
+.driver-link {
+  color: #007300;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.driver-link:hover {
+  opacity: 0.8;
+}
+
+/* ── RIDE TYPE TAG ── */
+.ride-type-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.ride-type-tag.offering {
+  background: #007300;
+  color: white;
+}
+
+.ride-type-tag.requesting {
+  background: #fef04d;
+  color: #333;
+}
+
+/* ── INFO GRID ── */
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-label {
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.detail-value {
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+/* ── NOTES ── */
+.details-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.details-notes p {
+  font-size: 0.9rem;
+  color: #444;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+/* ── ACTION BUTTONS ── */
+.details-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-book,
+.btn-whatsapp-details,
+.btn-call-details,
+.btn-profile {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  text-decoration: none;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+}
+
+.btn-book {
+  background: #007300;
+  color: white;
+  flex: 1;
+}
+
+.btn-book.booked {
+  background: #888;
+  cursor: not-allowed;
+}
+
+.btn-book.full {
+  background: #cc0000;
+  cursor: not-allowed;
+}
+
+.btn-whatsapp-details {
+  background: #1a1a1a;
+  color: white;
+}
+
+.btn-call-details {
+  background: #1a1a1a;
+  color: white;
+}
+
+.btn-profile {
+  background: transparent;
+  border: 2px solid #007300;
+  color: #007300;
+}
+
+.btn-book:hover:not(:disabled),
+.btn-whatsapp-details:hover,
+.btn-call-details:hover,
+.btn-profile:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.btn-book.own {
+  background: #888;
+  cursor: not-allowed;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  .ride-details-page {
+    padding: 1.5rem 1rem;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .details-actions {
+    flex-direction: column;
+  }
+}

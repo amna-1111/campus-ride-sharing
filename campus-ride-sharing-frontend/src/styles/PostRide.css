@@ -1,0 +1,172 @@
+.post-ride-page {
+  padding: 2rem 3rem;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+/* ── BACK BUTTON ── */
+.back-btn {
+  background: transparent;
+  border: none;
+  color: #007300;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  transition: opacity 0.2s;
+}
+
+.back-btn:hover {
+  opacity: 0.7;
+}
+.post-ride-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #007300;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* ── RIDE TYPE TOGGLE ── */
+.ride-type-toggle {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.toggle-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border-radius: 30px;
+  border: 2px solid #c8e6c0;
+  background: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.toggle-option input[type="radio"] {
+  display: none; /* hide actual radio, label acts as button */
+}
+
+.toggle-option.active {
+  background: #007300;
+  color: white;
+  border-color: #007300;
+}
+
+/* ── CARD ── */
+.post-ride-card {
+  background: #e4fde4;
+  border: 2px solid #c8e6c0;
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ── FORM ── */
+.post-ride-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* ── TWO COLUMN GRID ── */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+/* ── INPUT GROUP ── */
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-input label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.form-input input,
+.form-input textarea {
+  padding: 10px 12px;
+  border: 2px solid #c8e6c0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  background: white;
+  transition: border-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-input input:focus,
+.form-input textarea:focus {
+  border-color: #007300;
+}
+
+.form-input textarea {
+  resize: vertical;
+}
+
+/* ── ERROR ── */
+.post-error {
+  color: #cc0000;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* ── SUBMIT BUTTON ── */
+.post-submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #007300;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+  margin-top: 0.5rem;
+}
+
+.post-submit-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  .post-ride-page {
+    padding: 1.5rem 1rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr; /* single column on mobile */
+  }
+
+  .ride-type-toggle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-ride-card {
+    padding: 1.5rem;
+  }
+}

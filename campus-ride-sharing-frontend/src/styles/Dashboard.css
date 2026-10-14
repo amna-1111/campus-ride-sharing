@@ -1,0 +1,98 @@
+.dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.hero-title h1 {
+  background-image: linear-gradient(90deg, #89d957, #c9c265, #a8c044);
+  background-clip: text;
+  color: transparent;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.hero-msg {
+  max-width: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.post-btn {
+  padding: 1rem 6rem;
+  margin-left: 10px;
+  background: linear-gradient(90deg, #89d957, #c9c265);
+  border-radius: 5px;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.browse-btn {
+  color: white;
+  padding: 1rem 6rem;
+  background-color: #106610;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero-title h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero-msg {
+    font-size: 1.1rem; /* smaller text */
+    padding: 0 1rem; /* add side padding */
+  }
+
+  .hero-buttons {
+    flex-direction: column; /* stack buttons vertically */
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .post-btn,
+  .browse-btn {
+    width: 100%; /* full width buttons */
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero-msg {
+    font-size: 1.5rem;
+  }
+}

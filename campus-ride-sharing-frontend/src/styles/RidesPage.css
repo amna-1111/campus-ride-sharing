@@ -1,0 +1,84 @@
+.rides-page {
+  padding: 2rem 3rem;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.rides-title {
+  color: #007300;
+  font-weight: 550;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ── FILTER BAR ── */
+.rides-filter {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.rides-search {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.7rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.rides-dropdown {
+  padding: 0.7rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  transition: border-color 0.3s;
+}
+
+.rides-dropdown:focus {
+  border-color: #007300;
+}
+
+.rides-search:focus {
+  border-color: #007300;
+}
+
+/* ── GRID ── */
+.rides-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* ── EMPTY STATE ── */
+.rides-empty {
+  text-align: center;
+  padding: 4rem;
+  color: #888;
+  font-size: 1rem;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .rides-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .rides-page {
+    padding: 1.5rem 1rem;
+  }
+
+  .rides-grid {
+    grid-template-columns: 1fr;
+  }
+}

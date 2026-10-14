@@ -1,0 +1,110 @@
+.ride-card {
+  background-color: #e4fde4;
+  border: 3px solid;
+  border-radius: 30px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.ride-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.posted-by {
+  font-size: 0.9rem;
+}
+
+/* ── RIDE TYPE TAG ── */
+.ride-type-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.ride-type-tag.offering {
+  background: #007300;
+  color: white;
+}
+
+.ride-type-tag.requesting {
+  background: #fef04d;
+}
+
+/* ── ROWS ── */
+.card-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #444;
+  flex-wrap: wrap;
+}
+
+.arrow {
+  color: #1a6b1a;
+  font-weight: bold;
+}
+
+/* ── BUTTONS ── */
+.card-actions {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-whatsapp,
+.btn-call {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  transition: opacity 0.2s;
+  flex: 1; /* ← both take equal space */
+  text-align: center;
+}
+
+.btn-whatsapp {
+  background: black;
+  color: white;
+}
+
+.btn-call {
+  background: black;
+  color: white;
+}
+
+.btn-details {
+  background: #89d957;
+  color: #1a1a1a;
+  margin-left: auto;
+}
+
+.btn-whatsapp:hover,
+.btn-call:hover,
+.btn-details:hover {
+  opacity: 0.9;
+}
