@@ -62,7 +62,7 @@ The project is divided into two main parts:
 
 ```bash
 git clone https://github.com/amna-1111/campus-ride-sharing
-cd uni-ride
+cd campus-ride-sharing
 ```
 
 ### 2. Set up the backend
