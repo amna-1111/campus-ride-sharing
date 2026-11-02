@@ -31,7 +31,7 @@ export const api = {
   // Rides
   getRides: (filters = {}) => {
     const params = new URLSearchParams(filters).toString();
-    return fetch(`${BASE}/rides`).then((r) => r.json());
+    return fetch(`${BASE}/rides?${params}`).then((r) => r.json());
   },
 
   getRideById: (id) => fetch(`${BASE}/rides/${id}`).then((r) => r.json()),
