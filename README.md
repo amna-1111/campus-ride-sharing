@@ -1,6 +1,11 @@
-# Uni Ride – Campus Ride-Sharing Application
+# Uni Ride – Campus Ride-Sharing App
 
 Uni Ride is a full-stack campus ride-sharing application that allows students to offer rides, find available rides, book seats, and manage their bookings within a university community. It provides a simple platform for students to coordinate campus transportation.
+
+## Live Demo
+
+- Frontend: https://campus-ride-sharing.vercel.app/
+- Backend: https://campus-ride-sharing-fc4o.onrender.com
 
 ## Features
 
